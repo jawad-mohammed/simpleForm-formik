@@ -1,0 +1,25 @@
+* {
+  font-family: sans-serif;
+  margin-top: 10px;
+  padding-top: 5px;
+  text-align: center;
+  background-color: lightgreen;
+  font-size: 15px;
+}
+button{
+  background-color: lightseagreen;
+}
+button:hover{
+  background-color:lightgoldenrodyellow ;
+}
+input[type]{
+  background-color: lightpink;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+label{
+  font-size: large;
+}
+.error{
+  color: red;
+  font-size:large
+}
