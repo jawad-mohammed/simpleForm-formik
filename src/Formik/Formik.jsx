@@ -1,7 +1,11 @@
-import React from 'react'
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
 import {useFormik} from 'formik'
 import * as Yup from 'yup'
-const Register = () => {
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+const Formik = () => {
 
  const  initialValues={
     username:'',
@@ -27,11 +31,11 @@ validationSchema
     <div style={{display:'flex',justifyContent:'center',paddingTop:'10px'}}>
     Login
     <form onSubmit={formik.onSubmit}>
-        <input type="text"name='username' value={formik.values.username} onChange={formik.handleChange} placeholder="UserName"/><br />
+        <TextField type="text"name='username' value={formik.values.username} onChange={formik.handleChange} placeholder="UserName"/><br />
     {/* //displaying errors  */}
         {formik.errors.username &&  formik.errors.username} 
         
-        <input type="text" name='password' value={formik.values.password} onChange={formik.handleChange} placeholder="Password"/> <br />
+        <TextField type="text" name='password' value={formik.values.password} onChange={formik.handleChange} placeholder="Password"/> <br />
     {formik.errors.password && formik.errors.password}
         <button type='submit'>Log In</button>
     </form>
@@ -43,4 +47,4 @@ validationSchema
   )
 }
 
-export default Register
+export default Formik
